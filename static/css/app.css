@@ -1,0 +1,93 @@
+body{
+    background-color: #FAFAFA;
+}
+nav {
+    background-color: white;
+    border: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+.navbar-brand{
+    font-family: 'Open Sans';
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7D58EE !important;
+}
+
+.btn{
+    background-color: #7D58EE;
+}
+
+label{
+    font-family: 'Open Sans';
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media (min-width:320px){
+    .form{
+        margin-top: 20%;
+    }
+    #continue{
+        margin-top: 80%;
+    }
+    .baggage{
+        margin-top: 10%;
+    }
+    .customer{
+        margin-left: 1%;
+        margin-top: 10%;
+    }
+    .customer-name{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgba(65,65,65,1);
+    }
+    .customer-name-baggage{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgba(160,160,160,1);
+    }
+    .customer-other{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgba(160,160,160,1);
+    }
+    .customer-other-baggage{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgba(65,65,65,1);
+        padding-bottom: 24px;
+    }
+    .card{
+        width: 95%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    .timeline{
+        font-size: small;
+        margin-top: 10px;
+    }
+    .css-692fgp,.css-vcfpfv{
+        background-color: #7D58EE !important;
+    }
+}
+
+
+@media (min-width:899px){
+    .form{
+        margin-top: 10%;
+    }
+    #continue{
+        margin-top: 0%;
+    } 
+}
