@@ -1,4 +1,4 @@
-**Junction smooth travel challenge**
+## Junction smooth travel challenge
 
 In this challenge, we create a web application which user can use for tracking the luggages and also reporting the missing ones
 
