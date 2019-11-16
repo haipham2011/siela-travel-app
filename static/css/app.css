@@ -80,9 +80,15 @@ label{
     .css-692fgp,.css-vcfpfv{
         background-color: #7D58EE !important;
     }
+    #report{
+        padding-top: 24px;
+    }
+    .report-page{
+        margin-top: 50%;
+    }
 }
 
-
+#map { position:absolute; top:0; bottom:0; width:100%; }
 @media (min-width:899px){
     .form{
         margin-top: 10%;

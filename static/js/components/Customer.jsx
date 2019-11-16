@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Timeline, Event } from "react-timeline-scribble";
+import { Link } from 'react-router-dom'
 
 class TimeLine extends React.Component {
   constructor(props){
@@ -160,6 +161,9 @@ export default class Customer extends React.Component {
               </div>
               <div className="row timeline">
                 <TimeLine baggageId={element['baggageId']} headers={headers} api={api}/>
+              </div>
+              <div id="report" className="row d-flex justify-content-center">
+                <Link to="/report"><button onClick={this.onSubmit} type="button" className="btn btn-primary">Report missing</button></Link>
               </div>
             </div>
           </div>

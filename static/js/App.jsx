@@ -1,6 +1,10 @@
 import React from "react";
 import Login from "./components/Login";
 import Customer from "./components/Customer";
+import Report from "./components/Report";
+import Missing from "./components/Missing";
+import Wrong from "./components/Wrong";
+
 import '../css/app.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
@@ -38,6 +42,15 @@ export default class App extends React.Component {
                 } />
                 <Route path="/customer" render={
                   (props) => <Customer {...props} customerInfo={this.state.customer} headers={headers} api={api}/>
+                } />
+                <Route path="/report" render={
+                  (props) => <Report {...props} />
+                } />
+                <Route path="/missing" render={
+                  (props) => <Missing {...props} />
+                } />
+                <Route path="/wrong" render={
+                  (props) => <Wrong {...props} />
                 } />
               </Switch>
             </div>
