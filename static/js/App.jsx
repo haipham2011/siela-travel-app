@@ -4,15 +4,22 @@ import Customer from "./components/Customer";
 import Report from "./components/Report";
 import Missing from "./components/Missing";
 import Wrong from "./components/Wrong";
+import ApiConfig from "./ApiConfig";
 
 import '../css/app.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
-const headers = new Headers({
-  'Content-Type': 'application/json',
-  'x-api-key': 'jmdSHjy6WPaXwoR75E6mJ1ImhxKPRJb51v6DBS0A'
-});
-const api = 'https://junction.dev.qoco.fi/api/';
+//Create a file name ApiConfig.jsx in js folder
+//Make a function ApiConfig and return value according to this format
+//{
+//  headers: new Headers({
+//    'Content-Type': 'application/json',
+//    'x-api-key': 'your api key'
+//  }),
+//  api:'your api link'
+//}
+
+const {headers, api} = ApiConfig()
 
 export default class App extends React.Component {
   constructor(props){
@@ -30,6 +37,9 @@ export default class App extends React.Component {
   }
 
   render() {
+    console.log(ApiConfig);
+    console.log(headers);
+    console.log(api);
     
     return (
       <>

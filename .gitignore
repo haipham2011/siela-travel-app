@@ -1,3 +1,4 @@
 .vscode/
 venv/
 static/node_modules
+static/js/ApiConfig.jsx
