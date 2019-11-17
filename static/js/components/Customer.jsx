@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import { Timeline, Event } from "react-timeline-scribble";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom'
+
 
 class TimeLine extends React.Component {
   constructor(props){
@@ -60,7 +62,8 @@ export default class Customer extends React.Component {
     super(props);
     this.state = {
       baggage: [],
-      events: []
+      events: [],
+      redirect: false
     }
   }
 
@@ -211,11 +214,24 @@ export default class Customer extends React.Component {
     this.getBaggage();
   }
 
+  setRedirect = () => {
+    this.setState({
+      ...this.state,
+      redirect: true
+    })
+}
+
+  renderRedirect = () => {
+      if (this.state.redirect) {
+        return <Redirect to='/' />
+      }
+  }
 
   render() {
-    
+     
     return (
       <>
+        {this.renderRedirect()}   
         <nav className="navbar navbar-toggleable-md navbar-expand-md navbar-light" id="commRollover">
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -229,7 +245,9 @@ export default class Customer extends React.Component {
               <li className="nav-item">
                 <a className="nav-link" href="#">Settings</a>
               </li>
-
+              <li className="nav-item">
+                <a onClick={this.setRedirect} className="nav-link" href="#">Logout</a>
+              </li>
             </ul>
           </div>
         </nav>

@@ -13,6 +13,7 @@ export default class Login extends React.Component {
 
     setRedirect = () => {
         this.setState({
+          ...this.state,
           redirect: true
         })
     }
