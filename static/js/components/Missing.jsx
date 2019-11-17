@@ -1,5 +1,6 @@
 import React from "react";
-import mapboxgl from 'mapbox-gl'
+import mapboxgl from 'mapbox-gl';
+import Navbar from './Navbar';
 
 export default class Missing extends React.Component {
     constructor(props) {
@@ -77,6 +78,7 @@ export default class Missing extends React.Component {
         return (
             <>
                 <div>
+                    <Navbar />
                     <div id='map'></div>
                 </div>
             </>

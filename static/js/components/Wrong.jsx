@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from "./Navbar";
+
 
 export default class Wrong extends React.Component {
     constructor(props) {
@@ -9,7 +11,8 @@ export default class Wrong extends React.Component {
     render() {
 
         return (
-            <>
+            <>  
+                <Navbar />
                 <div className="row d-flex justify-content-center form">
                     <form>
                         <div className="form-group">
