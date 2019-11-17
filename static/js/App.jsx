@@ -37,10 +37,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(ApiConfig);
-    console.log(headers);
-    console.log(api);
-    
     return (
       <>
         <div id="app">
