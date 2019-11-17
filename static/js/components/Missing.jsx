@@ -69,7 +69,6 @@ export default class Missing extends React.Component {
                     "text-anchor": "top"
                 }
             });
-            console.log(map.getCenter());
             
         });
     }
